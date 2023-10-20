@@ -146,8 +146,8 @@ function outPage(className){
     changeLives();
 
     if(lives >= 1){
-        // let scream = new Audio('a-screaming.wav');
-        // scream.play();
+        let scream = new Audio('a-screaming.wav');
+        scream.play();
         document.querySelector('.mainFooter').style.display = "none";
     
         setTimeout(() => {
@@ -159,7 +159,7 @@ function outPage(className){
             document.querySelector('.out').style.display = "none";
             document.querySelector(className).style.display = "grid"
             document.querySelector('.mainFooter').style.display = "flex";
-        }, 300);
+        }, 3000);
     }
 }
 
