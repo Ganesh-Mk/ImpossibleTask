@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Luckiest+Guy&family=Tektur&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy', cursive;
+    user-select: none;
+}
+body{
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+html{
+    font-size: 100%;
+}
+.trust{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: url('https://img.freepik.com/free-photo/full-shot-scary-character-posing_23-2150701300.jpg') center/cover no-repeat;
+
+}
+.trust-container{
+    display: grid;
+    place-items: center;
+}
+.trust-container h1{
+    font-size: 2.6rem;
+    color: white;
+    margin: 3rem 0;
+    text-shadow: 1px 2px 4px black;
+    letter-spacing: 4px;
+}
+.yes{
+    font-size: 5rem;
+    color: #00ff32;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    text-shadow: 1px 1px 1px black;
+}
+.no{
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 2rem;
+    color: red;
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+
+/*========================================= DEAD PAGE =========================================*/
+
+
+.dead-container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+#Ghostimage{
+    position: absolute;
+    top: 50%;
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('https://irs.www.warnerbros.com/hero-banner-v2-mobile-jpeg/movies/media/browser/the_conjuring_2_banner.jpg') center/cover no-repeat;
+    animation: ghost .1s ease-out 1 ;
+}
+
+@keyframes ghost {
+    0%{
+        height: 0;
+        width: 0;
+    }
+    100%{
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+
+
+/*========================================= MAIN PAGE =========================================*/
+
+
+
+.mainPage{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    place-items: center;
+    background: url('https://media.istockphoto.com/id/1271182195/photo/halloween-background-with-scratches-and-blood-stains-3d-illustration.webp?b=1&s=170667a&w=0&k=20&c=-5R95ZkjyTAov0uHueIK70t8spWMrleAFBd70VFH4Gc=') center/cover no-repeat;
+}
+
+
+#name{
+    padding: .5rem 2rem;
+    text-align: center;
+    border: none;
+    text-shadow: 1px 1px 1px black;
+    background: transparent;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    backdrop-filter: blur(12px);
+    outline: none;
+    width: fit-content;
+    color: white;
+    border-radius: 4rem;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 14px -3px black;
+    animation: borderWhite 1s ease-in-out infinite;
+}
+@keyframes borderWhite {
+    0%{
+        box-shadow: 0px 0px 0px 0px white;
+    }
+    50%{
+        box-shadow: 1px 1px 14px -3px white;
+    }
+    100%{
+        box-shadow: 0px 0px 0px 0px white;
+    }
+}
+@keyframes borderRed {
+    0%{
+        box-shadow: 0px 0px 0px 0px red;
+    }
+    50%{
+        box-shadow: 1px 1px 14px -3px red;
+    }
+    100%{
+        box-shadow: 0px 0px 0px 0px red;
+    }
+}
+
+
+#name::placeholder{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.mainPage .container{
+    display: grid;
+    place-items: center;
+    width: 30rem;
+}
+#submitName{
+    font-size: 2rem;
+    color: white;
+    margin-top: 2rem;
+    background: transparent;
+    text-shadow: 3px 3px 0px red;
+    outline: none;
+    border: none;
+    padding: 0.7rem 3rem;
+    border-radius: 4rem;
+    width: fit-content;
+
+    box-shadow: 2px 2px 14px -7px red;
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+}
+
+
+
+.rulesContainer{
+    display: grid;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    place-items: center;
+}
+
+.rulesContainer h1{
+    margin: 2rem 0;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 0px red;
+
+}
+.rulesContainer h1 span{
+    color:rgb(250, 62, 62); 
+    text-shadow: 1px 1px 0px white;
+}
+
+
+.rulesContainer p{
+    font-family: cursive;
+    font-size: 1.5rem;
+    margin: .3rem 0;
+}
+
+.warning{
+    margin-top: 4rem;
+    color: red;
+    font-size: 1.1rem;
+    font-family: auto;
+    text-align: center;
+}
+
+
+
+
+/*========================================= OUT =========================================*/
+
+
+
+.out{
+    display: none;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url('https://cdn.videvo.net/videvo_files/video/premium/getty_106/customThumbnails/istock-1026559494.jpg') center/cover no-repeat;
+}
+.out-container{
+    display: grid;
+    place-items: center;
+}
+.out h1{
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 9px black;
+
+}
+.out h1 span{
+    color: red;
+    font-size: 3rem;
+    font-family: fantasy;
+    text-shadow: 1px 1px 2px white;
+
+}
+.out h2{
+    font-size: 2rem;
+    color: white;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px black;
+
+}
+.out p{
+    font-size: 5rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+
+
+
+
+
+/*========================================= blue-red-buttons =========================================*/
+
+
+.blue-red-buttons{
+    width: 100%;
+    height: 90vh;
+    display: none;
+    font-family: 'Indie Flower', cursive;
+}
+.blue-red-container{
+    
+    padding: 5rem 2rem;
+}
+
+header,
+section{
+    display: grid;
+    place-items: center;
+}
+.level{
+    font-size: 3rem;
+    font-family: cursive;
+}   
+.question{
+    color: black;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blueButton ,
+#redButton{
+    display: grid;
+    place-items: center;
+    margin: 1.4rem;
+    width: 10rem;
+    height: 7rem;
+    box-shadow: 1px 1px 8px -2px black, inset -1px -1px 4px 0px white;
+    cursor: pointer;
+}
+#blueButton{
+    background: #92dfff;
+    border-radius: 2rem 2rem 3.5rem 1.8rem;
+}
+#redButton{
+    background: rgb(255, 63, 63);
+    border-radius: 3rem 1rem 2rem 1.5rem;
+}
+#blueCounter{
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+#redCounter{
+    font-family: cursive;
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+
+
+
+
+
+/*========================================= HORSE =========================================*/
+
+.horse{
+    display: none;
+    width: 100%;
+    height: 90vh;
+    padding: 1rem 1rem;
+}
+header{
+    display: grid;
+    place-items: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+.level{
+    font-size: 3rem;
+}   
+
+.questionContainer{
+    display: flex;
+}
+#horseImage{
+    width: 10rem;
+}
+.question{
+    color: black;
+    font-size: 3rem;
+    font-family: cursive;
+    margin-left: 3rem;
+}
+
+.alphabetContainer{
+    height: 13rem;
+    box-shadow: 1px 1px 8px -2px black, inset -1px -1px 4px 0px white;
+    border-radius: 1rem;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+.lines{
+    display: flex;
+}
+.letters{
+    cursor: pointer;
+    font-size: 3rem;
+    margin: 0 .5rem;
+}
+
+.horseAnswer{
+    color: red;
+    font-size: 5rem;
+}
+
+
+/*========================================= LETTER-ALPHABET =========================================*/
+
+
+.letter-alphabet{
+    display: none;
+    width: 100%;
+    height: 90vh;
+    padding: 1rem 1rem;
+}
+.letter-alphabet header{
+    display: grid;
+    place-items: center;
+}
+.letter-alphabet section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1.5rem;
+}
+.letter-alphabet .level{
+    font-size: 3rem;
+}   
+.question{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family: cursive;
+}
+
+#optionContainer1{
+    margin: 0 1rem;
+}
+.optionAlpha{
+    box-shadow: 1px 1px 8px -1px rgb(255, 75, 75), inset -1px -1px 4px 0px white;
+    width: 11rem;
+    height: 4rem;
+    margin: 1rem 0;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.option1{
+    border-radius: 1rem 1rem 0rem 1rem;
+}
+.option2{
+    border-radius: 1rem 0 1rem 1rem;
+}
+.option3{
+    border-radius: 1rem 1rem 1rem 0;
+}
+.option4{
+    border-radius: 0 1rem 1rem 1rem;
+}
+
+
+
+
+
+/* ===================================== SPOT-DIFF-IMAGE ===================================== */
+
+
+
+.spot-diff-image{
+    display: none;
+    width: 100%;
+    height: 90vh;
+    padding: 1rem 1rem;
+}
+header{
+    display: grid;
+    place-items: center;
+}
+.spot-diff-image section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    flex-direction: row;
+}
+.spot-diff-image .level{
+    font-size: 3rem;
+}   
+.question{
+    color: black;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+.spotDiffImage{
+    width: 12rem;
+    margin: 0 .5rem;
+    box-shadow: 1px 1px 8px -2px black, inset -1px -1px 4px 0px white;
+    border-radius: 2rem;
+}
+.spot-diff-image footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#counterContainer{
+    display: flex;
+    margin-top: 3rem;
+}
+#counterContainer div{
+    font-size: 2rem;        
+    padding: 0 1rem;
+    margin: 0 .5rem;
+    border-radius: 50rem;
+}
+#minusBtn{
+    background: red;
+    box-shadow: 1px 1px 8px -2px black, inset -1px -1px 4px 0px white;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+#counter{
+    border: none;
+    position: relative;
+    font-family: cursive;
+}
+#plusBtn{
+    background: green;
+    box-shadow: 1px 1px 8px -2px black, inset -1px -1px 4px 0px white;
+    cursor: pointer;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+}
+#submitBtn{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px -2px black, inset -1px -1px 4px 0px white;
+    background: rgb(204, 232, 255);
+    border-radius: 1rem;
+}
+
+
+
+
+/* ===================================== CLICK-BY-ORDER ===================================== */
+
+
+
+.click-by-order{
+    display: none;
+    place-items: center;
+    width: 100%;
+    height: 90vh;
+    padding: 1rem 1rem;
+}
+.click-by-order header{
+    display: grid;
+    place-items: center;
+}
+.click-by-order section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+.click-by-order .level{
+    font-size: 3rem;
+}   
+.question{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+.questionNum{
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+.numsContainer{
+    position: relative;
+    height: 17rem;
+    width: 26rem;
+    box-shadow: 1px 1px 8px -2px black, inset -1px -1px 4px 0px white;
+    border-radius: 2rem;
+}
+.numbers{
+    position: absolute;
+    font-family: cursive;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.num-49{
+    left: 9rem;
+    top: 8rem;
+    color: #58c4c2;
+}
+.num-80{
+    left: 20rem;
+    top: 4rem;
+    color: #5959ff;
+}
+.num-5{
+    top: 11rem;
+    left: 4rem;
+    color: rgb(22, 162, 22);
+}
+.num-101{
+    top: 10rem;
+    left: 17rem;
+    color: rgb(255, 88, 88);
+}
+.num-7{
+    top: 2rem;
+    left: 13rem;
+    color: yellowgreen;
+}
+.num-11{
+    top: 2rem;
+    left: 4rem;
+    color: #ff92a4;
+}
+
+.removeNum{
+    color: transparent;
+}
+
+
+
+
+/* ===================================== ANS-IN-QUESTION ===================================== */
+
+
+
+
+
+.ans-in-question{
+    display: none;
+    place-items: center;
+    width: 100%;
+    height: 90vh;
+    padding: 1rem 1rem;
+}
+.ans-in-question header{
+    display: grid;
+    place-items: center;
+}
+.ans-in-question section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.ans-in-question .level{
+    font-size: 3rem;
+}   
+.question{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family: cursive;
+}
+#three{
+    color: rgb(77, 0, 0);
+    cursor: pointer;
+}
+
+#optionContainer1{
+    margin: 0 1rem;
+}
+.options{
+    box-shadow: 1px 1px 8px -1px rgb(255, 75, 75), inset -1px -1px 4px 0px white;
+    width: 11rem;
+    height: 4rem;
+    margin: 1rem 0;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.option1{
+    border-radius: 1rem 1rem 0rem 1rem;
+}
+.option2{
+    border-radius: 1rem 0 1rem 1rem;
+}
+.option3{
+    border-radius: 1rem 1rem 1rem 0;
+}
+.option4{
+    border-radius: 0 1rem 1rem 1rem;
+}
+
+
+
+
+/* ===================================== MAIN FOOTER ===================================== */
+
+
+
+.mainFooter{
+    padding: .2rem 1rem 1rem 2rem;
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.hintSkipContainer{
+    display: flex;
+    gap: 2rem;
+}
+.mainFooter h1{
+    font-size: 3rem;
+    color: rgb(223 7 7);
+}
+
+#hint{
+    font-size: 2rem;
+}
+#skip{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #145a00;
+}
+
+.heart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart{
+    width: 2rem;
+    height: 3rem;
+    background: url('heart.png') center/cover no-repeat;
+    margin: 0 .5rem;
+}
+
+
+/* ===================================== ELIMINATED PAGE ===================================== */
+
+
+
+.eliminated{
+    display: none;
+    place-items: center;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.eliminatedImage{
+    height: 108vh;
+    width: 100%;
+    background: url('https://w0.peakpx.com/wallpaper/506/124/HD-wallpaper-grim-reaper-with-red-background-red-aesthetic.jpg') center/cover no-repeat;
+}
+
+
+
+
+
+
+
+/* ===================================== MEDIA QUERIES ===================================== */
+
+
+
+@media screen and (max-width: 600px){
+    html{
+        font-size: 80%;
+    }
+    .mainPage .container{
+        padding: 2rem;
+        height: 100vh;
+        width: 100%;
+    }
+    .letter-alphabet section {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px){
+    .mainFooter h1{
+        font-size: 2rem;
+    }
+    .heart{
+        width: 1.7rem;
+        height: 2.5rem;
+    }
+    .skip,
+    .hint{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 430px){
+    .alphabetContainer {
+        padding: 1rem 0;
+        width: 100%;
+    }
+    .letter{
+        font-size: 175%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .mainFooter h1{
+        font-size: 2rem;
+    }
+    .heart{
+        width: 2rem;
+        height: 2.7rem;
+        margin: .1rem;
+    }
+    .skip,
+    .hint{
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    html{
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 335px){
+    html{
+        font-size: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================== SCORE PAGE ===================================== */
+
+
+
+
+.scorePage{
+    display: none;
+    place-items: center;
+}
+

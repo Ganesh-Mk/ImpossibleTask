@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Impossible Quiz</title>
+</head>
+<style>
+   
+</style>
+<body>
+    <div class="trust">
+        <div class="trust-container">
+            <h1>DO YOU TRUST ME?</h1>
+            <div class="yes">YES</div>
+            <div class="no">NO</div>
+        </div>
+    </div>
+    <div class="dead-container">
+        <div id="Ghostimage"></div>
+    </div>
+    <div class="eliminated">
+        <div class="eliminatedImage">
+            <div class="ripImage">R I P</div>
+        </div>
+    </div>
+    <div class="mainPage">
+        <div class="container">
+            <input autofocus autocomplete="off" autocorrect="off" type="text" name="name" id="name" placeholder="ENTER NAME HERE" value="Ganesh">
+            <div class="rulesContainer">
+                <h1>RULES <span>!</span></h1>
+                <div>
+                    <p>1. There are 15 IMPOSSIBLE task</p>
+                    <p>2. Answers can be anywhere</p>
+                    <p>3. You'll get 5 lives</p>
+                    <p>4. Looses all lives? You're DEAD!</p>
+                    <p><< SOUND IS ON, VOLUME UP! >></p>
+                </div>
+                <div class="warning">"WARNING: This quiz may cause uncontrollable laughter, occasional confusion, and may cause spontaneous laughter and quiz addiction. Submit at your own risk!"</div>
+            </div>
+            <input type="submit" id="submitName" value="SUBMIT">
+        </div>
+    </div>
+    <div class="out">
+        <div class="out-container">
+            <h1>LOOSES <span>1</span> LIVES</h1>
+            <h2>Remaining lives:</h2>
+            <p id="livesCounter">5</p>
+        </div> 
+    </div>
+
+
+    <!-- ===================================== BLUE-RED BUTTONS ===================================== -->
+
+    <div class="blue-red-buttons">
+        <header>
+            <div class="level">Level 1</div>
+            <div class="question">Click blue button <span style="font-family: cursive;">10</span> times, then click red button once</div>
+        </header>
+        <section>
+            <div class="buttonContainer">
+                <div id="blueButton">
+                    <div id="blueCounter"></div>
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <div id="redButton">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================================== HORSE ===================================== -->
+
+    <div class="horse">
+        <header>
+            <div class="level">Level 2</div>
+            <div class="questionContainer">
+                <img id="horseImage" src="https://static.vecteezy.com/system/resources/previews/001/209/190/original/animal-causes-horse-png.png" alt="">
+                <!-- <div class="question">?</div> -->
+            </div>
+        </header>
+        <section>
+            
+            <div class="horseAnswer">.</div>
+            <div class="alphabetContainer">
+                <div class="lines firstLine">
+                    <p class="letters">Q</p>
+                    <p class="letters">W</p>
+                    <p class="letters">E</p>
+                    <p class="letters">R</p>
+                    <p class="letters">T</p>
+                    <p class="letters">Y</p>
+                    <p class="letters">U</p>
+                    <p class="letters">I</p>
+                    <p class="letters">O</p>
+                    <p class="letters">P</p>
+                </div>
+                <div class="lines secondLine">
+                    <P class="letters">A</P>
+                    <P class="letters">S</P>
+                    <P class="letters">D</P>
+                    <P class="letters">F</P>
+                    <P class="letters">G</P>
+                    <P class="letters">H</P>
+                    <P class="letters">J</P>
+                    <P class="letters">K</P>
+                    <P class="letters">L</P>
+                </div>
+                <div class="lines thirdLine">
+                    <P class="letters">Z</P>
+                    <P class="letters">X</P>
+                    <P class="letters">C</P>
+                    <P class="letters">V</P>
+                    <P class="letters">B</P>
+                    <P class="letters">N</P>
+                    <P class="letters">M</P>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================================== ANS-IN-QUESTION ===================================== -->
+
+    <div class="ans-in-question">
+        <header>
+            <div class="level">Level  <span id="three">3</span></div>
+            <div class="question">999 - 996 = ?</div>
+        </header>
+        <section>
+            <div id="optionContainer1">
+                <div class="options option1">28</div>
+                <div class="options option2">2</div>
+            </div>
+            <div>
+                <div class="options option3">0.69</div>
+                <div class="options option4">Python</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================================== LETTER-ALPHABET ===================================== -->
+
+    <div class="letter-alphabet">
+        <header>
+            <div class="level">Level 4</div>
+            <div class="question">What is the 4th letter of<div>
+            <div class="question">Alphabet ?<div>
+        </header>
+        <section>
+            <div id="optionContainer1">
+                <div class="optionAlpha option1">H</div>
+                <div class="optionAlpha option2">A</div>
+            </div>
+            <div>
+                <div class="optionAlpha option3">?</div>
+                <div class="optionAlpha option4">D</div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- ===================================== SPOT-DIFF-IMAGE ===================================== -->
+
+    <div class="spot-diff-image">
+        <header>
+            <div class="level">Level 5</div>
+            <div class="question">Spot the differences.</div>
+        </header>
+        <section>
+            <img class="spotDiffImage" src="spotDiffImage.png" alt="image">
+            <img class="spotDiffImage" src="spotDiffImage.png" alt="image">
+        </section>
+        <footer>
+            <div id="counterContainer">
+                <div id="minusBtn">-</div>
+                <div id="counter">0</div>
+                <div id="plusBtn">+</div>
+            </div>
+            <div id="submitBtn">Submit</div>
+        </footer>
+    </div>
+
+    <!-- ===================================== CLICK-BY-ORDER ===================================== -->
+
+    <div class="click-by-order">
+        <header>
+            <div class="level">Level 6</div>
+            <div class="question">Click numbers in correct order: </div>
+            <div class="question questionNum">49, 80, 5, 101, 7, 11</div>
+        </header>
+        <section>
+            <div class="numsContainer">
+                <div class="numbers num-49">49</div>
+                <div class="numbers num-80">80</div>
+                <div class="numbers num-5">5</div>
+                <div class="numbers num-101">101</div>
+                <div class="numbers num-7">7</div>
+                <div class="numbers num-11">11</div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="mainFooter">
+        <div class="heart-container">
+            <h1>LIVES: </h1>
+            <div class="heart" id="heart1"></div>
+            <div class="heart" id="heart2"></div>
+            <div class="heart" id="heart3"></div>
+            <div class="heart" id="heart4"></div>
+            <div class="heart" id="heart5"></div>
+        </div>
+        <div class="hintSkipContainer">
+            <p id="skip">SKIP</p>
+            <p id="hint">>>></p>
+        </div>
+    </div>
+
+    <div class="scorePage">SCORE PAGE</div>
+</body>
+<script>
+
+    
+    //document.querySelector('.trust').style.display = "none";
+    
+    
+</script>
+</html>
